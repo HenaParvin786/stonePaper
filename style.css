@@ -1,0 +1,138 @@
+body {
+    /* background-color: #ccc; */
+    background-color: aqua;
+}
+.title{
+font-size: 3rem;
+margin:20px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* border:3px solid black */
+
+}
+.selections {
+    display: flex;
+    justify-content: center;
+
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 5rem;
+    transition: 0.3s;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+    /* background-color:fuchsia; */
+}
+
+.results {
+    margin-top: 1.3rem;
+    display: grid;
+    /* justify-content:space-evenly;
+    display: flex; */
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.result-score {
+    margin-left: 0.1rem;
+    font-size: 2rem;
+    color: #221f21;
+}
+
+.result-selection {
+    opacity: 0.5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.results .result-score {
+    text-decoration: underline;
+}
+
+@media screen and (width<=520px) {
+    .selection {
+        font-size: 2rem;
+    }
+
+    .results {
+        font-size: 1rem;
+    }
+
+    .results .result-score {
+        font-size:1rem;
+    }
+}
+@media screen and (width<=290px) {
+    .selection {
+        font-size: 1.8rem;
+    }
+
+    .results {
+        font-size: 0.5rem;
+    }
+
+    .results .result-score {
+        font-size:0.5rem;
+    }
+}
+@media screen and (width<=155px) {
+    .selections{
+        flex-direction: column;
+    }
+    .selection {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-weight: bold;
+    }
+
+    .results {
+        font-size: 0.5rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .results .result-score {
+        font-size:0.5rem;
+        font-weight: 600;
+        font-weight: bold;
+    }
+}
+    @media screen and (160px <=width<= 289px) {
+        /* .selections{
+            flex-direction: column;
+        } */
+        .selection {
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-weight: bold;
+        }
+    
+        .results {
+            font-size: 0.6rem;
+            /* flex-wrap: wrap; */
+        }
+    
+        .results .result-score {
+            font-size:0.6rem;
+            font-weight: 700;
+            font-weight: bold;
+        }  
+}
+@media(width<=435px)
+{
+    .title{
+        font-size: 1.7rem;
+    }
+}
